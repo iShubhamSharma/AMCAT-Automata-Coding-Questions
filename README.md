@@ -11,3 +11,7 @@ Recently asked questions in AMCAT Automata section
 ## String Based 
 
 ![](/output/reverseString.png)
+
+## Matrix Based 
+
+![](/output/transpose.png)
