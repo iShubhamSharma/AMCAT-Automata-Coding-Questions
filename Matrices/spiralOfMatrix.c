@@ -2,7 +2,7 @@
 #define R 3
 #define C 3
  
-void spiralPrint(int m, int n, int a[R][C])
+void spiralPrint(int m, int n, int mat[R][C])
 {
     int i, k = 0, l = 0;
  
@@ -18,14 +18,14 @@ void spiralPrint(int m, int n, int a[R][C])
         /* Print the first row from the remaining rows */
         for (i = l; i < n; ++i)
         {
-            printf("%d ", a[k][i]);
+            printf("%d ", mat[k][i]);
         }
         k++;
  
         /* Print the last column from the remaining columns */
         for (i = k; i < m; ++i)
         {
-            printf("%d ", a[i][n-1]);
+            printf("%d ", mat[i][n-1]);
         }
         n--;
  
@@ -34,7 +34,7 @@ void spiralPrint(int m, int n, int a[R][C])
         {
             for (i = n-1; i >= l; --i)
             {
-                printf("%d ", a[m-1][i]);
+                printf("%d ", mat[m-1][i]);
             }
             m--;
         }
@@ -44,7 +44,7 @@ void spiralPrint(int m, int n, int a[R][C])
         {
             for (i = m-1; i >= k; --i)
             {
-                printf("%d ", a[i][l]);
+                printf("%d ", mat[i][l]);
             }
             l++;    
         }        
